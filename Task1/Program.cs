@@ -16,4 +16,11 @@
 Console.Write("Введите трёхзначное число:");
 
 String text = Console.ReadLine();
-System.Console.WriteLine($"{text[1]}");
+if (text.Length == 3)
+    {
+        System.Console.WriteLine($"{text[1]}");
+    }
+else
+    {
+        System.Console.WriteLine("Введенное число не является трехзначным.");
+    }
