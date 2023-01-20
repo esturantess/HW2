@@ -6,19 +6,26 @@
 
 // Первый способ решения:
 
-// Console.Write("Введите трёхзначное число:");
+// Console.Write("Введите трёхзначное число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine($"Вторая цифра числа {num}: {(num - ((num / 100) * 100)) / 10}");
+// if (num >= 100 && num < 1000)
+// {
+//     Console.WriteLine($"Вторая цифра числа {num}: {(num - ((num / 100) * 100)) / 10}");
+// }
+// else
+// {
+//     System.Console.WriteLine("Введенное число не является трехзначным.");
+// }
 
 // Второй способ решения:
 
-Console.Write("Введите трёхзначное число:");
+Console.Write("Введите трёхзначное число: ");
 
 String text = Console.ReadLine();
 if (text.Length == 3)
     {
-        System.Console.WriteLine($"{text[1]}");
+        System.Console.WriteLine($"Вторая цифра числа {text}: {text[1]}");
     }
 else
     {
