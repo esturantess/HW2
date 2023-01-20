@@ -6,7 +6,14 @@
 
 // Первый способ решения:
 
-Console.Write("Введите трёхзначное число:");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите трёхзначное число:");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Вторая цифра числа {num}: {(num - ((num / 100) * 100)) / 10}");
+// Console.WriteLine($"Вторая цифра числа {num}: {(num - ((num / 100) * 100)) / 10}");
+
+// Второй способ решения:
+
+Console.Write("Введите трёхзначное число:");
+
+String text = Console.ReadLine();
+System.Console.WriteLine($"{text[1]}");
